@@ -1,35 +1,39 @@
 import type { SxProps } from '@mui/material'
 
 const card: SxProps = {
+  display: 'flex',
+  gap: 1,
   justifyContent: 'flex-start',
   alignItems: 'flex-start',
   mb: 1,
 }
 
 const cardUser: SxProps = {
+  display: 'flex',
+  gap: 1,
   justifyContent: 'flex-end',
   alignItems: 'flex-start',
   mb: 1,
 }
 
-const cardBody = {
+const cardBody: SxProps = {
   p: 1.5,
   ml: 0,
   mr: 1,
   maxWidth: '70%',
   backgroundColor: 'background.paper',
   color: 'text.primary',
-  borderRadius: '18px 18px 18px 0',
+  borderRadius: '8px 8px 8px 0',
 }
 
-const cardBodyUser = {
+const cardBodyUser: SxProps = {
   p: 1.5,
   ml: 1,
   mr: 0,
   maxWidth: '70%',
   backgroundColor: 'primary.main',
   color: 'primary.contrastText',
-  borderRadius: '18px 18px 0 18px',
+  borderRadius: '8px 8px 0 8px',
 }
 
 const text: SxProps = {
