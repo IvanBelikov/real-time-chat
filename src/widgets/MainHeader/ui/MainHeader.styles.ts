@@ -11,7 +11,10 @@ const headerContainer: SxProps = {
 }
 
 const logoText: SxProps = {
-  fontSize: 16,
+  fontSize: {
+    xs: 10,
+    sm: 16,
+  },
 }
 
 const controls: SxProps = {
