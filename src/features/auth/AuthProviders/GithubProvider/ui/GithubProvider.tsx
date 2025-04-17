@@ -13,13 +13,15 @@ import styles from './GithubProvider.styles'
 export const GithubProvider: FC<GithubProviderProps> = ({ isDisabled }) => {
   const provider = new GithubAuthProvider()
 
+  const handleClick = () => signInWithPopup(auth, provider)
+
   return (
     <Button
       fullWidth
       color={'inherit'}
       variant={'outlined'}
       disabled={isDisabled}
-      onClick={() => signInWithPopup(auth, provider)}
+      onClick={handleClick}
     >
       <Box sx={styles.buttonContent}>
         <GitHubIcon />

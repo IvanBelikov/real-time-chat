@@ -3,9 +3,9 @@ import { createRoot } from 'react-dom/client'
 
 import { CssBaseline, ThemeProvider } from '@mui/material'
 
-import { App } from './app'
-
 import { theme } from '@base/app/theme'
+
+import { App } from './app'
 
 const rootElem = document.getElementById('root')
 

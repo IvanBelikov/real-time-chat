@@ -11,10 +11,8 @@ import {
 
 import { db } from '@base/lib'
 import { FirestoreCollections } from '@base/constants'
-
-import { MessageSchema, type Message } from '@base/schemas'
-
 import type { Nullable } from '@base/types'
+import { MessageSchema, type Message } from '@base/schemas'
 
 export const useMessages = () => {
   const [messages, setMessages] = useState<Message[]>([])

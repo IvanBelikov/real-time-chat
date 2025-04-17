@@ -1,11 +1,11 @@
 import { useMutation } from '@tanstack/react-query'
 
-import { FirestoreCollections, MutationKeys } from '@base/constants'
 import { addDoc, collection, Timestamp } from 'firebase/firestore'
 
-import { useUserContext } from '@base/contexts'
 import { db } from '@base/lib'
+import { useUserContext } from '@base/contexts'
 import type { Message } from '@base/schemas'
+import { FirestoreCollections, MutationKeys } from '@base/constants'
 
 export const useSendMessage = () => {
   const user = useUserContext()

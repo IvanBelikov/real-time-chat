@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
 
-import { auth } from '@base/lib'
 import { onAuthStateChanged, type User } from 'firebase/auth'
 
+import { auth } from '@base/lib'
 import type { Nullable } from '@base/types'
 
 export const useAuth = () => {
