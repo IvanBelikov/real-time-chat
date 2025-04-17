@@ -11,8 +11,9 @@ const page: SxProps = {
   overflow: 'auto',
 }
 
-const pageContainer = {
+const pageContainer: SxProps = {
   height: '100%',
+  overflow: 'hidden',
 }
 
 export default { layoutContainer, page, pageContainer }
